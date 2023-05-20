@@ -26,10 +26,10 @@ atari_lib.create_atari_environment.game_name = 'BeamRider'
 # Deterministic ALE version used in the DQN Nature paper (Mnih et al., 2015).
 atari_lib.create_atari_environment.sticky_actions = False
 create_agent.agent_name = 'dqn'
-Runner.num_iterations = 20
-Runner.training_steps = 250  # agent steps
-Runner.evaluation_steps = 125 # agent steps
-Runner.max_steps_per_episode = 27  # agent steps
+Runner.num_iterations = 25
+Runner.training_steps = 25000  # agent steps
+Runner.evaluation_steps = 12500 # agent steps
+Runner.max_steps_per_episode = 2700  # agent steps
 
 AtariPreprocessing.terminal_on_life_loss = True
 
