@@ -150,6 +150,7 @@ class TandemRunner(run_experiment.Runner):
     sum_returns = 0.
 
     while step_count < min_steps:
+      print("step ", str(step_count))
       episode_length, episode_return = self._run_one_episode(agent_type)
       statistics.append({
           '{}_{}_episode_lengths'.format(run_mode_str,

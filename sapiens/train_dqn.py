@@ -82,7 +82,7 @@ sns.lineplot(
     x='iteration', y='train_episode_returns', hue='agent',
     data=experimental_data[GAME], ax=ax)
 plt.title(GAME)
-plt.show()
+#plt.show()
 plt.savefig(LOG_PATH + "/training.png")
 
 
@@ -96,7 +96,7 @@ plt.plot()
 plt.xlabel('Iteration')
 plt.ylabel('Return')
 plt.legend()
-plt.show()
+#plt.show()
 
 # gin.clear_config()
 # run_experiment.load_gin_configs(gin_files, gin_bindings)
